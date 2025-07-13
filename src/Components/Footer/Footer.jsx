@@ -90,7 +90,7 @@ const Footer=()=>{
                  </div>
                  <div>
                     <div className="flex items-center gap-3 mt-6">
-                        <a href="https://www.instagram.com/dheeraj_chandel376/?next=%2F">
+                        <a href="https://www.instagram.com/dheeraj_chandel376/?next">
                             <FaInstagram className='text-3xl' />
                         </a>
                         <a href="https://www.facebook.com/profile.php?id=100070903990396">
@@ -107,7 +107,7 @@ const Footer=()=>{
                        </div>
                        <div className="flex items-center gap-3 mt-3">
                         <IoCall/>
-                        <p>+91 9079098456</p>
+                        <p>+91 9079098666</p>
                        </div>
                     </div>
                  </div>
