@@ -110,7 +110,7 @@ import Img3 from "../../assets/women3.jpg";
 import Img4 from "../../assets/women4.jpg";
 import Img5 from "../../assets/women5.jpg";
 import ProductCard from '../../components/ProductCard';
-import Header from '../../components/Header';
+import Header from '../../Header';
 
 const ProductsData = [
     { id: 1, image: Img1, name: "Women Ethnia", description: "Beautiful ethnic wear", price: 49.99, color: "white", aosDelay: "0" },
@@ -160,7 +160,7 @@ const Products = () => {
                 theme={theme}
                 toggleTheme={toggleTheme}
             />
-            <div className='mt-14 mb-12'>
+            <div className='mt-14 mb-12 m-10'>
                 <div className="container">
                     <div className="text-center mb-10 max-w-[600px] mx-auto">
                         <p data-aos="fade-up" className='text-sm text-primary'>TopSelling Products for you</p>
@@ -188,3 +188,9 @@ const Products = () => {
 };
 
 export default Products;
+
+
+
+
+
+

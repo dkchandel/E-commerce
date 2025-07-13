@@ -1,9 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import { IoMdSearch } from "react-icons/io"; 
 import { FaCartShopping } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
 import { FiShoppingBag } from "react-icons/fi";
 import DarkMode from "./DarkMode";
+import { FaUserAlt } from "react-icons/fa";
+import AuthForm from "../../AuthForm";
+
 
 const Menu = [
   {
@@ -46,8 +49,10 @@ const Dropdownlist = [
 ];
 
 const Navbar = ({ handleOrderPopup }) => {
+  const [showAuth, setShowAuth] = useState(false);
+
   return (
-    
+    <>
     <div
       className="shadow-md bg-white dark:bg-gray-900
     duration-200 relative z-40"
@@ -91,7 +96,23 @@ const Navbar = ({ handleOrderPopup }) => {
              <div>
                 <DarkMode />
              </div>
+             <button onClick={()=>setShowAuth(true)}>
+             <div className="cursor-pointer hover:text-emerald-500 ml-3 mt-2"><FaUserAlt className="ml-4"/>SignUp</div>
+             </button>
         </div>
+        {showAuth && (
+        <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50">
+          <div className="bg-white dark:bg-gray-900 p-6 rounded-lg relative">
+            <button
+              onClick={() => setShowAuth(false)}
+              className="absolute top-2 right-2 text-2xl"
+            >
+              &times;
+            </button>
+            <AuthForm/>
+          </div>
+        </div>
+      )}
       </div>
     </div>
     <div data-aos="zoom-in" className="flex justify-center">
@@ -124,6 +145,7 @@ const Navbar = ({ handleOrderPopup }) => {
         </ul>
     </div>
     </div>
+    </>
   );
 };
 

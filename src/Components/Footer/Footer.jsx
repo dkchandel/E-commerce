@@ -26,6 +26,25 @@ const FooterLinks=[
     },
 ]
 
+const FooterLink=[
+{
+        title:"Services",
+        link:"/#Services",
+    },
+    {
+        title:"Support",
+        link:"/#",
+    },
+    {
+        title:"Terms & Condition",
+        link:"/#",
+    },
+    {
+        title:"FAQ",
+        link:"/#",
+    },
+]
+
 const Footer=()=>{
     return <div className='text-white bg-[#212529]'>
         <div className="container">
@@ -61,7 +80,7 @@ const Footer=()=>{
                          Links
                         </h1>
                         <ul className="flex flex-col gap-3">
-                            {FooterLinks.map((link)=>(
+                            {FooterLink.map((link)=>(
                                 <li className="cursor-pointer 
                                 hover:text-primary hover:translate-x-1 
                                 duration-300 text-gray-200" key={link.title}>{link.title}</li>
@@ -71,10 +90,10 @@ const Footer=()=>{
                  </div>
                  <div>
                     <div className="flex items-center gap-3 mt-6">
-                        <a href="#">
+                        <a href="https://www.instagram.com/dheeraj_chandel376/?next=%2F">
                             <FaInstagram className='text-3xl' />
                         </a>
-                        <a href="#">
+                        <a href="https://www.facebook.com/profile.php?id=100070903990396">
                             <FaFacebook className='text-3xl' />
                         </a>
                         <a href="https://www.linkedin.com/in/dheeraj-chandel-532070260">

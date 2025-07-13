@@ -9,10 +9,10 @@ import TopProducts from "./Components/TopProducts/TopProducts";
 import Subscribe from "./Components/Subscribe/Subscribe";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import Footer from "./Components/Footer/Footer";
+// import AuthForm from "./AuthForm";
 // import Header from "./Components/Header/Header";
-// import Home from "./Components/Home"
 // import CartModel from "./Components/CartModel";
-// import { CartProvider } from './Components/CartContext';
+// import { CartProvider } from './CartContext';
 
 
 
@@ -33,7 +33,7 @@ function App() {
   },[]);
   return (
     <>
-     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+     <div className="bg-white dark:bg-gray-900  dark:text-white duration-200">
       <Navbar handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
       <Banner />
@@ -43,9 +43,9 @@ function App() {
       <Testimonials />
       <Footer/>
       {/* <Header/> */}
-      {/* <Home /> */}
       {/* <CartModel/> */}
       {/* <CartContext/> */}
+      {/* <AuthForm/> */}
      </div>
      
     </>
@@ -53,6 +53,7 @@ function App() {
 }
 
 export default App;
+
 
 
 
